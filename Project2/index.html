@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Layout with Dropdown</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">LOGO</div>
+    <nav class="navbar">
+      <div class="dropdown">
+        <a href="#" class="dropbtn">menu</a>
+        <div class="dropdown-content">
+          <a href="#">Submenu 1</a>
+          <a href="#">Submenu 2</a>
+          <a href="#">Submenu 3</a>
+        </div>
+      </div>
+      <a href="#">menu</a>
+      <a href="#">menu</a>
+      <a href="#">menu</a>
+    </nav>
+  </header>
+
+  <section class="slider">
+    <div class="arrow left" onclick="prevSlide()">&lt;</div>
+    <div class="slide-container">
+      <div class="slide">SLIDE 1</div>
+      <div class="slide">SLIDE 2</div>
+      <div class="slide">SLIDE 3</div>
+    </div>
+    <div class="arrow right" onclick="nextSlide()">&gt;</div>
+  </section>
+
+  <section class="triangles">
+    <div class="triangle"></div>
+    <div class="triangle flipped"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
